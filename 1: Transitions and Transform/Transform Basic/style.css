@@ -1,0 +1,35 @@
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 3em;
+  background-color: #372d4d;
+  perspective: 1000px;
+}
+
+img {
+  width: 150px;
+}
+
+.robot {
+  /*    BASIC OF TRANSFORM: 
+
+  The Code down below will do the follwing: 
+  robot move to right 100px
+  move down 200px
+  x2 size and rotate 45 degree
+
+  note that there are: translateX() and translateY() as well
+
+  Code: 
+  transform: translate(100px, 200px) scale(2) rotate(90deg);
+  */
+
+  /* 
+    3D TRANSFORM: 
+    Order: x axis, y axix, z axis
+
+    Other code: transform: rotateX(30deg) rotateY(20deg); 
+ */
+
+  transform: translate3d(100px, 200px, -100px);
+}

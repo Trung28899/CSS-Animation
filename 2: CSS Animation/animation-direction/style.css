@@ -1,0 +1,33 @@
+.robot {
+  animation-name: move;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 300;
+
+  /*
+    default: normal
+    try the following values: reverse, alternate, alternate-reverse
+
+    for alternative and alternative-reverse: must have animation-iteration-count
+    set to a value higher than 1
+  */
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.17, 0.67, 0.42, 1.55);
+}
+
+@keyframes move {
+  100% {
+    transform: translateX(700%);
+  }
+}
+
+/*------ other styles ---*/
+
+body {
+  margin: 3em;
+  background-color: #433f55;
+}
+
+img {
+  width: 100px;
+}
